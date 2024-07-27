@@ -1,11 +1,13 @@
 import Footer from "./Footer";
 import Header from "./Header";
+import Menu from "./Menu";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <h1>App</h1>
+
+      <Menu />
       <Footer />
     </div>
   );

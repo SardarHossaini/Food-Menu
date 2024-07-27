@@ -3,7 +3,6 @@ const Footer = () => {
   const open = 8;
   const close = 21;
   let isOpen = houer >= open && houer <= close;
-  alert(isOpen);
   // if (houer >= open && houer <= close) alert("We are currently open");
   // else alert("We are close");
   return (

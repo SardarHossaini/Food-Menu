@@ -4,40 +4,34 @@
   color: #333;
   box-sizing: border-box;
 }
-.Navbar {
+header {
+  padding-top: 15px;
   display: flex;
-  justify-content: space-around;
-  background-color: #333;
-  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
-.logo p a {
-  text-decoration: none;
-  font-size: 20;
-  color: white;
-  font-weight: bold;
-  color: deeppink;
+header::before,
+header::after {
+  content: "";
+  margin: 0 10px 10px 10px;
+  width: 50px;
+  height: 3px;
+  background-color: rgb(245, 195, 88);
 }
-.items ul {
-  padding-top: 2px;
+.sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  margin-top: 25px;
 }
-.items ul li {
-  list-style: none;
-  display: inline;
-  margin: 0 8px;
-}
-.items ul li a {
-  text-decoration: none;
-  color: white;
-}
-.items ul li a:hover {
-  color: deeppink;
-}
-.info {
-  margin: 20px;
-}
-.info h2 {
-  color: deeppink;
-}
-h4 {
-  text-align: center;
+.sub::before,
+.sub::after {
+  content: "";
+  margin: 0 10px 10px 10px;
+  width: 140px;
+  height: 3px;
+  background-color: rgb(56, 56, 56);
 }
