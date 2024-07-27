@@ -7,6 +7,13 @@ const Header = () => {
       <div className="sub">
         <h2 className="subtitle text-dark">Our Menu</h2>
       </div>
+      <div className="desc">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora,
+          quaerat eveniet? Exercitationem officiis quidem quia est recusandae
+          perferendis.
+        </p>
+      </div>
     </div>
   );
 };

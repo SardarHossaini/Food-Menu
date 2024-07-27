@@ -8,6 +8,7 @@ const Footer = () => {
   return (
     <div className="Footer">
       <footer>{new Date().toLocaleTimeString()} We are currently open.</footer>
+      <button className="btn btn-outline-warning">Order</button>
     </div>
   );
 };

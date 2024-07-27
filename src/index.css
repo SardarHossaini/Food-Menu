@@ -4,12 +4,18 @@
   color: #333;
   box-sizing: border-box;
 }
+.Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 header {
   padding-top: 15px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
 }
 header::before,
 header::after {
@@ -24,8 +30,7 @@ header::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
-  margin-top: 25px;
+  margin: 40px 0 10px;
 }
 .sub::before,
 .sub::after {
@@ -34,4 +39,52 @@ header::after {
   width: 140px;
   height: 3px;
   background-color: rgb(56, 56, 56);
+}
+.desc {
+  width: 70%;
+  text-align: center;
+  font-size: 13px;
+}
+
+div.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(244, 244, 244);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 13px;
+}
+.photo {
+  padding: 0;
+  margin: 0;
+}
+.photo img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.menuItem {
+  padding: 0px;
+  background-color: transparent;
+}
+.car {
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+footer {
+  margin: 20px 0 5px;
+}
+.soldOut {
+  background-color: rgba(213, 55, 55, 0.769);
+}
+.btn {
+  text-align: center;
 }
