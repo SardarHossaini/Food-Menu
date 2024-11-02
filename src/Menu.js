@@ -51,14 +51,18 @@ const Menu = () => {
       soldOut: true,
     },
   ];
-  if (menuData.id == 6) return null;
+  const pizzaNumber = menuData.length;
   return (
-    <div className="container ">
-      <div className="row">
-        {menuData.map((pizzas) => (
-          <Pizza pizzas={pizzas} />
-        ))}
-      </div>
+    <div className="container menu">
+      {pizzaNumber > 0 ? (
+        <div className="row">
+          {menuData.map((pizzas) => (
+            <Pizza pizzas={pizzas} />
+          ))}
+        </div>
+      ) : (
+        <p>We're still working in our menu. Please come back later!</p>
+      )}
     </div>
   );
 };
