@@ -85,6 +85,6 @@ footer {
 .soldOut {
   background-color: rgba(213, 55, 55, 0.769);
 }
-.btn {
+#footer_text {
   text-align: center;
 }

@@ -6,7 +6,7 @@ const Menu = () => {
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum provident at vel quia culpa vitae officia ratione, dolore error ad neque perspiciatis?",
       price: 10,
       photoName: "image/f1.jpg",
-      soldOut: false,
+      soldOut: true,
     },
     {
       id: 2,

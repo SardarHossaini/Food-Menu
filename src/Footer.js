@@ -7,8 +7,21 @@ const Footer = () => {
   // else alert("We are close");
   return (
     <div className="Footer">
-      <footer>{new Date().toLocaleTimeString()} We are currently open.</footer>
-      <button className="btn btn-outline-warning">Order</button>
+      <footer>
+        {isOpen ? (
+          <div className="container" id="footer_text">
+            <p>
+              We're open until to {close}:00 come visit us and order online.
+            </p>
+            <button className="btn btn-outline-warning order">Order</button>
+          </div>
+        ) : (
+          <p>
+            {" "}
+            Please come between {open}:00 and {close}:00 houre
+          </p>
+        )}
+      </footer>
     </div>
   );
 };
