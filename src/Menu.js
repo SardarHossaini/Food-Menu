@@ -1,8 +1,10 @@
+import Pizza from "./Pizza";
+
 const Menu = () => {
   const menuData = [
     {
       id: 1,
-      name: "Focaccia",
+      name: "Donat",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum provident at vel quia culpa vitae officia ratione, dolore error ad neque perspiciatis?",
       price: 10,
       photoName: "image/f1.jpg",
@@ -33,7 +35,7 @@ const Menu = () => {
       soldOut: false,
     },
     {
-      id: 1,
+      id: 5,
       name: "Focaccia",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum provident at vel quia culpa vitae officia ratione, dolore error ad neque perspiciatis?",
       price: 10,
@@ -41,33 +43,20 @@ const Menu = () => {
       soldOut: false,
     },
     {
-      id: 2,
-      name: "Focaccia",
+      id: 6,
+      name: "Pizza",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum provident at vel quia culpa vitae officia ratione, dolore error ad neque perspiciatis?",
       price: 13,
       photoName: "image/f6.jpg",
-      soldOut: false,
+      soldOut: true,
     },
   ];
-
+  if (menuData.id == 6) return null;
   return (
     <div className="container ">
       <div className="row">
-        {menuData.map((item) => (
-          <div className="menuItem col-12 col-sm-12 col-md-6" key={item.id}>
-            <div className="row car">
-              <div className="photo col-6">
-                <img src={item.photoName} alt="" className="img-fluid" />
-              </div>
-              <div className="col-6 text">
-                <h3 className="text-warning">{item.name}</h3>
-                <p>{item.desc}</p>
-                <h4>
-                  <b>{item.price}</b>
-                </h4>
-              </div>
-            </div>
-          </div>
+        {menuData.map((pizzas) => (
+          <Pizza pizzas={pizzas} />
         ))}
       </div>
     </div>

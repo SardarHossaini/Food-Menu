@@ -88,3 +88,10 @@ footer {
 #footer_text {
   text-align: center;
 }
+ul {
+  list-style: none;
+  display: inline-block;
+}
+li {
+  display: inline-block;
+}
